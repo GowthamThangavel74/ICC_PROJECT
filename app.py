@@ -11,6 +11,10 @@ Base = declarative_base()
 
 
 ####  CRUD   Create(insert), Read(get), Update(put), Delete(Delete)   #########
+#POST: to create data.
+#GET: to read data.
+#PUT: to update data.
+#DELETE: to delete data.
 
 engine = create_engine('sqlite:///lamp.db', echo = True)
 meta = MetaData()
