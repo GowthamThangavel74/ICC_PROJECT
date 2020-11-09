@@ -29,6 +29,7 @@ class Icc2(Base):
    Job_Des = Column(String)
    Aplication_counts = Column(Integer)
    Aplication_Viewed = Column(Integer)
+Base.metadata.create_all(engine) 
 
 from sqlalchemy.orm import sessionmaker
 Session = sessionmaker(bind = engine)
